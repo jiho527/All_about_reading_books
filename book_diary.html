@@ -13,8 +13,35 @@
 </ol>
 <center><h2>독서 일기장</h2><br>
   ID/ 날짜<br>
-  독서 일기<br>
-  댓글<br>
-  ID/날짜: 검색창<br></center>
+  독서일기장
+  <form action = "#" accept-charset="utf-8" name = "person_info" method = "get">
+                    <textarea name = "comment" cols = "100" rows = "30"
+                              placeholder="독서일기를 작성하세요"></textarea>
+                    <br><br>
+                    <input type = "submit" value = "submit"/>
+                    <input type = "reset" value = "reset"/><br><br>
+            </fieldset>
+        </form>
+        <br>
+  댓글 기능<br><br>
+  <form action = "#" accept-charset="utf-8" name = "comment" method = "get">
+    <textarea name = "comment" cols = "50" rows = "1"
+    placeholder="댓글을 남겨주세요"></textarea>
+    <input type = "submit" value = "submit"/>
+    <input type = "reset" value = "reset"/><br><br>
+  </form>
+
+  ID/날짜: 검색창 기능<br><br>
+  <form action = "#" accept-charset="utf-8" name = "comment" method = "get">
+    <select>
+      <option value = "id">ID</option>
+      <option value = "date">날짜<option>
+    </select>
+    <textarea name = "comment" cols = "50" rows = "1"
+    placeholder="독서 일기 제목을 입력하세요"></textarea>
+    <input type = "submit" value = "submit"/><br><br>
+  </form>
+  </center>
+</form>
 </body>
 </html>
