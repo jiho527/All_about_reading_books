@@ -3,70 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>독서 일기장</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160768846-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-160768846-1');
-</script>
-
+  <link rel="stylesheet" href="all_about_reading_books_style.css">
 </head>
 <body>
-  <center><h1><a href="reading_books.html">독서의 모든 것</a></h1></center>
-  <ol>
-    <li><a href="book_diary.html">독서 일기장</a></li>
-    <li><a href="good_books.html">좋은 책 고르는 법</a> </li>
-    <li><a href="library_recommendation.html">가까운 도서관 추천</a> </li>
-</ol>
-<center><h2>독서 일기장</h2><br>
-  ID/ 날짜<br>
-  독서일기장
-  <form action = "#" accept-charset="utf-8" name = "person_info" method = "get">
-                    <textarea name = "comment" cols = "100" rows = "30"
-                              placeholder="독서일기를 작성하세요"></textarea>
-                    <br><br>
-                    <input type = "submit" value = "submit"/>
-                    <input type = "reset" value = "reset"/><br><br>
-            </fieldset>
-        </form>
-        <br>
-  댓글 기능<br><br>
-  <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://reading-books.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-  ID/날짜: 검색창 기능<br><br>
-  <form action = "#" accept-charset="utf-8" name = "comment" method = "get">
-    <select>
-      <option value = "id">ID</option>
-      <option value = "date">날짜<option>
-    </select>
-    <textarea name = "comment" cols = "50" rows = "1"
-    placeholder="독서 일기 제목을 입력하세요"></textarea>
-    <input type = "submit" value = "submit"/><br><br>
-  </form>
-  </center>
-</form>
+  <h1><a href="reading_books.html">독서의 모든 것</a></h1>
+  <div id="grid">
+    <div id="nav">
+      <ol>
+        <li><a href="book_diary.html" style="color:orange">독서 일기장</a></li>
+        <li><a href="good_books.html">좋은 책 고르는 법</a> </li>
+        <li><a href="library_recommendation.html">가까운 도서관 추천</a> </li>
+      </ol>
+    </div>
+    <div id="article">
+      <h2>독서 일기장</h2>
+      글 목록 -> 글 클릭 -> 게시물 + 댓글
+      <br>글쓰기 버튼 -> 글 작성 창
+      <br>
+      <br><img src="https://t1.daumcdn.net/cfile/tistory/221B973B58404E2503">
+      <br>저작권 침해 의사 없음
+    </div>
+  </div>
 </body>
 </html>
